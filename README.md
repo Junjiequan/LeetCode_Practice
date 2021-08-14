@@ -63,7 +63,7 @@ Therefore, the key is to identify whether left side is larger than right side un
 Since The first value of the combination unit already summed up with result(total value),
 for the next calculation the previous unit value needs to be deducted from the 2nd unit of combination unit, 
 moreover, extra previous value is also needs to be deducted, as the actual value of the combination unit is equal to
-combination value = combination.second_unit - combination.first_unit || IV(4) = V(5) - I(1)    
+`combination.second_unit - combination.first_unit || IV(4) = V(5) - I(1) `
 ```
 map = {
     'I':1,

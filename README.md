@@ -1,5 +1,6 @@
 # LIST
 
+
 1. Two Sum (Hash map solution)
 ```
 /**
@@ -87,8 +88,35 @@ var romanToInt = function(s) {
         : result += num
         prev=num;
     }
-    console.log(result)
     return result
 };
 romanToInt('CXLVIII')
+```
+
+4. Longest Common Prefix
+
+```
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+ var longestCommonPrefix = function(strs) {
+    let target = strs[0];
+    let check ='';
+    for(let i=1; i<strs.length; i++){
+
+        for(let ii=0; ii<strs[i-1].length; ii++){
+            
+            if (target[ii] === (strs[i][ii])){
+                check += strs[i][ii]
+            } else {
+                target = check
+            }
+        }
+        check='';
+    }
+    return target
+};
+
+longestCommonPrefix(["abcccc","a"])
 ```
